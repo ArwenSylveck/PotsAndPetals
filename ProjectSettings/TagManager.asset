@@ -41,3 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 866309153
+    locked: 0
+  - name: BackgroundDecor
+    uniqueID: 3593760479
+    locked: 0
+  - name: Plots
+    uniqueID: 3567976667
+    locked: 0
+  - name: Flowers
+    uniqueID: 1077240453
+    locked: 0
+  - name: ForegroundDecor
+    uniqueID: 1424465915
+    locked: 0
+  - name: UI
+    uniqueID: 1610842331
+    locked: 0
+  - name: Menu
+    uniqueID: 2186723719
+    locked: 0
