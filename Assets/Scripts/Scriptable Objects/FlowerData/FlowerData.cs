@@ -5,8 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewFlower", menuName = "Flowers/FlowerData")]
 public class FlowerData : ScriptableObject
 {
-    public string flowerName;           // Name of the flower
+    public FlowerType flowerType;       // Enum type
     public int maxGrowthStage;          // Number of of days to reach max growth
+    public GameObject prefab;           // Flower prefab reference
     public int cost;                    // Cost to plant/buys
     public int sellPrice;               // Price when sold (optional if not needed)
     
