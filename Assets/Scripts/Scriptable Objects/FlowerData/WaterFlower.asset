@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e2731ad09236524d93df1a31fc39e67, type: 3}
   m_Name: WaterFlower
   m_EditorClassIdentifier: 
-  flowerType: 0
+  flowerType: 2
   maxGrowthStage: 0
   prefab: {fileID: 0}
   cost: 0
