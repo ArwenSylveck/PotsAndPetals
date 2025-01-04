@@ -10,9 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e2731ad09236524d93df1a31fc39e67, type: 3}
-  m_Name: FlowerExample
+  m_Name: WaterFlower
   m_EditorClassIdentifier: 
-  flowerName: 
-  flowerSprite: {fileID: 0}
-  growthTime: 0
+  flowerType: 0
+  maxGrowthStage: 0
+  prefab: {fileID: 0}
+  cost: 0
   sellPrice: 0
+  magicType: 0
+  uniqueTrait: 
+  specialMechanic: 
