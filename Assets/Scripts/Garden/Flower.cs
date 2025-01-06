@@ -4,29 +4,31 @@ using UnityEngine;
 
 public class Flower : MonoBehaviour
 {
-    private FlowerData flowerData; // Reference to static flower data
-    private Animator animator;
+    public SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
+    public Sprite[] growthStageSprites; // Array of sprites for each growth stage
 
-    /// Initializes the flower visuals based on the given data and growth stage.
- 
+    private FlowerData flowerData;
+    private int currentGrowthStage;
+
     public void Initialize(FlowerData data, int growthStage)
     {
         flowerData = data;
-        animator = GetComponent<Animator>();
+        currentGrowthStage = growthStage;
 
         UpdateVisual(growthStage);
     }
 
-    /// Updates the flower's visuals to match its current growth stage.
     public void UpdateVisual(int growthStage)
     {
-        if (animator != null)
+        if (growthStageSprites == null || growthStageSprites.Length == 0)
         {
-            animator.SetInteger("GrowthStage", growthStage);
+            Debug.LogWarning("No growth stage sprites assigned to the flower!");
+            return;
         }
-        else
-        {
-            Debug.LogWarning($"Animator not set on flower prefab: {flowerData?.flowerType}");
-        }
+
+        currentGrowthStage = Mathf.Clamp(growthStage, 0, growthStageSprites.Length - 1);
+        spriteRenderer.sprite = growthStageSprites[currentGrowthStage];
+
+        Debug.Log($"Flower updated to growth stage: {currentGrowthStage}");
     }
 }

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e2731ad09236524d93df1a31fc39e67, type: 3}
-  m_Name: FireFlower
+  m_Name: WindFlower
   m_EditorClassIdentifier: 
-  flowerType: 1
-  maxGrowthStage: 2
-  prefab: {fileID: 6712802101304742475, guid: 3c207402477341f4a8641309044e183f, type: 3}
+  flowerType: 3
+  maxGrowthStage: 3
+  prefab: {fileID: 8985450602990094763, guid: 782ef1312797484429caf372c8e9bc74, type: 3}
   cost: 0
   sellPrice: 0
-  magicType: 1
+  magicType: 3
   uniqueTrait: 
   specialMechanic: 

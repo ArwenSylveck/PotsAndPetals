@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: WaterFlower
   m_EditorClassIdentifier: 
   flowerType: 2
-  maxGrowthStage: 0
-  prefab: {fileID: 0}
+  maxGrowthStage: 1
+  prefab: {fileID: 4431934640653325541, guid: 0168a499b661f92439455a84b860154a, type: 3}
   cost: 0
   sellPrice: 0
-  magicType: 0
+  magicType: 2
   uniqueTrait: 
   specialMechanic: 

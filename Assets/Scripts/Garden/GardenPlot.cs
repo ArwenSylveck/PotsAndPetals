@@ -27,6 +27,8 @@ public class GardenPlot : MonoBehaviour
         GameObject flowerPrefab = Instantiate(flowerData.prefab, transform);
         currentFlower = flowerPrefab.GetComponent<Flower>();
         currentFlower.Initialize(flowerData, growthStage);
+
+        Debug.Log($"Planted {flowerData.flowerType} in plot {plotID}");
     }
 
     public void RemoveFlower()

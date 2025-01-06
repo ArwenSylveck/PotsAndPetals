@@ -8,7 +8,6 @@ public class GardenManager : MonoBehaviour
     public List<FlowerData> allFlowerData; // All flower data assets
     public void PlotClicked(GardenPlot plot)
     {
-        /*
         if (!SeedSelectionManager.Instance.HasSelectedSeed())
         {
             Debug.LogWarning("No seed selected!");
@@ -26,7 +25,7 @@ public class GardenManager : MonoBehaviour
 
         // Clear seed selection after planting
         SeedSelectionManager.Instance.ClearSelection();
-        */
+        
     }
 
     public void LoadGarden(List<PlotSaveData> saveDataList)
