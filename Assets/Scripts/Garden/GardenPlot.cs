@@ -11,6 +11,11 @@ public class GardenPlot : MonoBehaviour
 
     public Flower currentFlower;
 
+    private void OnMouseDown()
+    {
+        // Notify GardenManager when clicked
+        FindObjectOfType<GardenManager>().PlotClicked(this);
+    }
     public void PlantFlower(FlowerData flowerData)
     {
         if (isOccupied) return;

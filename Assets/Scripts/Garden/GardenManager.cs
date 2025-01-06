@@ -6,6 +6,28 @@ public class GardenManager : MonoBehaviour
 {
     public List<GardenPlot> gardenPlots; // References to all plots in the scene
     public List<FlowerData> allFlowerData; // All flower data assets
+    public void PlotClicked(GardenPlot plot)
+    {
+        /*
+        if (!SeedSelectionManager.Instance.HasSelectedSeed())
+        {
+            Debug.LogWarning("No seed selected!");
+            return;
+        }
+
+        if (plot.isOccupied)
+        {
+            Debug.LogWarning($"Plot {plot.plotID} is already occupied.");
+            return;
+        }
+
+        // Plant the selected seed
+        plot.PlantFlower(SeedSelectionManager.Instance.selectedSeed);
+
+        // Clear seed selection after planting
+        SeedSelectionManager.Instance.ClearSelection();
+        */
+    }
 
     public void LoadGarden(List<PlotSaveData> saveDataList)
     {
