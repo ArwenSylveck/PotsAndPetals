@@ -11,6 +11,11 @@ public class GardenPlot : MonoBehaviour
 
     public Flower currentFlower;
 
+    private void OnMouseDown()
+    {
+        // Notify GardenManager when clicked
+        FindObjectOfType<GardenManager>().PlotClicked(this);
+    }
     public void PlantFlower(FlowerData flowerData)
     {
         if (isOccupied) return;
@@ -22,6 +27,8 @@ public class GardenPlot : MonoBehaviour
         GameObject flowerPrefab = Instantiate(flowerData.prefab, transform);
         currentFlower = flowerPrefab.GetComponent<Flower>();
         currentFlower.Initialize(flowerData, growthStage);
+
+        Debug.Log($"Planted {flowerData.flowerType} in plot {plotID}");
     }
 
     public void RemoveFlower()
