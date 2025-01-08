@@ -28,6 +28,8 @@ public class GardenPlot : MonoBehaviour
         currentFlower = flowerPrefab.GetComponent<Flower>();
         currentFlower.Initialize(flowerData, growthStage);
 
+        flowerPrefab.transform.localPosition = new Vector3(0, 0.5f, 0);
+
         Debug.Log($"Planted {flowerData.flowerType} in plot {plotID}");
     }
 
