@@ -53,6 +53,9 @@ TagManager:
   - name: Flowers
     uniqueID: 1077240453
     locked: 0
+  - name: Characters
+    uniqueID: 300542885
+    locked: 0
   - name: ForegroundDecor
     uniqueID: 1424465915
     locked: 0
